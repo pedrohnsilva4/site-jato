@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet Store - Loja de Jatos</title>
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #0d6efd 0%, #000000 100%);
+            color: white;
+        }
+        .badge-jet {
+            background-color: #ffc107;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jet Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page.html">Página 2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold">Jet Store</h1>
+                    <p class="lead">A melhor loja de aviões a jato, com modelos de luxo e tecnologia de ponta para sua frota executiva ou militar.</p>
+                    <a href="#produtos" class="btn btn-warning btn-lg">Ver produtos</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://cdn-defesaaereanaval.nuneshost.com/wp-content/uploads/2014/01/J-20.jpg" class="img-fluid rounded shadow" alt="Avião a jato" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Produtos</h2>
+                <p class="text-muted">Escolha seu jato com design elegante, performance e conforto incomparável.</p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://i0.wp.com/www.zona-militar.com/wp-content/uploads/2025/09/Su-57.jpeg?ssl=1" class="card-img-top" alt="Jato executivo" />
+                        <div class="card-body">
+                            <span class="badge badge-jet mb-2">Novo</span>
+                            <h5 class="card-title">Su-57</h5>
+                            <p class="card-text">Caça russo usado em combate atualmente</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>US$ 23.900.000</strong>
+                                <a href="page.html" class="btn btn-dark btn-sm">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://paulogala.com.br/wp-content/uploads/2024/03/img_1551-1.jpg" class="card-img-top" alt="Jato militar" />
+                        <div class="card-body">
+                            <span class="badge badge-jet mb-2">Top</span>
+                            <h5 class="card-title">P-51 Mustang</h5>
+                            <p class="card-text">Classico da segunda guerra mundial usado pelos yanks</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>US$ 45.700.000</strong>
+                                <a href="page1.html" class="btn btn-dark btn-sm">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/F-15C_Eagle_from_the_44th_Fighter_Squadron_flies_during_a_routine_training_exercise_April_15%2C_2019.jpg" class="card-img-top" alt="Jato de passageiros" />
+                        <div class="card-body">
+                            <span class="badge badge-jet mb-2">Premium</span>
+                            <h5 class="card-title">F-51c Eagle</h5>
+                            <p class="card-text">Jato de ultima geração</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>US$ 31.200.000</strong>
+                                <a href="#contato" class="btn btn-dark btn-sm">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>Sobre a Jet Store</h2>
+                    <p>A Jet Store oferece uma seleção premium de aviões a jato para executivos, frotas empresariais e aplicações especiais. Com design moderno e tecnologia de ponta, garantimos performance e segurança.</p>
+                    <ul>
+                        <li>Consultoria personalizada</li>
+                        <li>Entrega internacional</li>
+                        <li>Suporte técnico completo</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://aeroin.net/wp-content/uploads/2022/04/Saab-Gripen-E-F-39E-Caca-FAB-4100-Forca-Aerea-Brasileira-22040901.jpg" class="img-fluid rounded shadow" alt="Avião de luxo" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Fale conosco</h3>
+                            <p class="card-text">Solicite uma proposta ou tire dúvidas sobre nossos jatos e serviços.</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label">Mensagem</label>
+                                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Jet Store. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="public/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

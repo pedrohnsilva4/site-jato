@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet Store - Cadastro</title>
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <style>
+        .hero-page {
+            background: linear-gradient(135deg, rgba(18, 85, 194, 0.8) 0%, rgba(17, 24, 39, 0.8) 100%), url('https://aeromagazine.uol.com.br/media/_versions/cacas-f-22-raptor-uaf_widelg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .badge-jet {
+            background-color: #ffc107;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Jet Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLogin" aria-controls="navbarNavLogin" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavLogin">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#cadastro">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-page py-5" id="cadastro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-center">Cadastre-se na Jet Store</h1>
+                    <p class="lead text-center">Crie sua conta para acessar ofertas exclusivas e acompanhar seus pedidos de jatos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Formulário de Cadastro</h3>
+                            <p class="card-text text-center">Preencha os dados abaixo para se registrar.</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nomeCompleto" class="form-label">Nome Completo</label>
+                                    <input type="text" class="form-control" id="nomeCompleto" placeholder="Seu nome completo" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailCadastro" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="emailCadastro" placeholder="seu@email.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="telefone" placeholder="(11) 99999-9999">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="senhaCadastro" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" id="senhaCadastro" placeholder="Digite sua senha" required minlength="6">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmarSenha" class="form-label">Confirmar Senha</label>
+                                    <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirme sua senha" required minlength="6">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="termos" required>
+                                    <label class="form-check-label" for="termos">
+                                        Aceito os <a href="#" class="text-decoration-none">termos de uso</a> e <a href="#" class="text-decoration-none">política de privacidade</a>.
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Já tem uma conta? <a href="#" class="text-decoration-none">Faça login</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card bg-secondary border-0 shadow-sm">
+                        <div class="card-body text-white">
+                            <h3 class="card-title">Dúvidas sobre cadastro?</h3>
+                            <p class="card-text">Entre em contato conosco para qualquer dúvida ou suporte.</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nomeContato" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="nomeContato" placeholder="Seu nome">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailContato" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="emailContato" placeholder="seu@email.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagemContato" class="form-label">Mensagem</label>
+                                    <textarea class="form-control" id="mensagemContato" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning">Enviar mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Jet Store. Página de cadastro.</p>
+        </div>
+    </footer>
+
+    <script src="public/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
